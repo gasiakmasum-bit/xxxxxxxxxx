@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeatherNow</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <div class="logo">
+      <span class="logo__icon"><img src="./img/icon-heder.png" width="125px" height="75px" alt=""></span>
+      <span>WeatherNow</span>
+        </div>
+
+    <nav class="nav">
+      <a href="#">Головна</a>
+      <a href="#">Про нас</a>
+      <a href="#">Контакти</a>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <section class="hero">
+    <h1>Погода у твоєму місті</h1>
+    <p>Дізнайся точну погоду прямо зараз</p>
+
+    <div class="search">
+      <input id="cityInput" type="text" placeholder="Введіть назву міста..." />
+      <button id="searchBtn">Показати погоду</button>
+    </div>
+  </section>
+
+  <section class="weather-card glass">
+    <div class="weather-card__top">
+      <div class="weather-icon">
+        ☁️
+      </div>
+
+      <div class="weather-info">
+        <h2 id="cityName">Київ, Україна</h2>
+        <p id="currentDate"></p>
+        <div id="temperature" class="temperature">22°C</div>
+        <h3 id="description">Хмарно</h3>
+      </div>
+
+      <div class="hourly">
+        <div class="hour">
+          <span>10:00</span>
+          <div>☁️</div>
+          <b>20°C</b>
+        </div>
+
+        <div class="hour">
+          <span>11:00</span>
+          <div>☁️</div>
+          <b>21°C</b>
+        </div>
+
+        <div class="hour">
+          <span>12:00</span>
+          <div>🌤️</div>
+          <b>22°C</b>
+        </div>
+
+        <div class="hour">
+          <span>13:00</span>
+          <div>🌤️</div>
+          <b>23°C</b>
+        </div>
+
+        <div class="hour">
+          <span>14:00</span>
+          <div>☀️</div>
+          <b>24°C</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="details">
+      <div class="detail">
+        <span>💧</span>
+        <div>
+          <p>Вологість</p>
+          <b id="humidity">65%</b>
+        </div>
+      </div>
+
+      <div class="detail">
+        <span>🌬️</span>
+        <div>
+          <p>Вітер</p>
+          <b id="wind">4 м/с</b>
+        </div>
+      </div>
+
+      <div class="detail">
+        <span>🌡️</span>
+        <div>
+          <p>Відчувається як</p>
+          <b id="feelsLike">21°C</b>
+        </div>
+      </div>
+
+      <div class="detail">
+        <span>🧭</span>
+        <div>
+          <p>Тиск</p>
+          <b id="pressure">1012 гПа</b>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="forecast glass">
+    <h2>Прогноз на 5 днів</h2>
+
+    <div class="forecast__grid">
+      <div class="forecast-card">
+        <h3>Сб</h3>
+        <p>25 травня</p>
+        <div>☁️</div>
+        <b>22°C / 14°C</b>
+      </div>
+
+      <div class="forecast-card">
+        <h3>Нд</h3>
+        <p>26 травня</p>
+        <div>🌤️</div>
+        <b>24°C / 15°C</b>
+      </div>
+
+      <div class="forecast-card">
+        <h3>Пн</h3>
+        <p>27 травня</p>
+        <div>☀️</div>
+        <b>26°C / 16°C</b>
+      </div>
+
+      <div class="forecast-card">
+        <h3>Вт</h3>
+        <p>28 травня</p>
+        <div>🌧️</div>
+        <b>20°C / 13°C</b>
+      </div>
+
+      <div class="forecast-card">
+        <h3>Ср</h3>
+        <p>29 травня</p>
+        <div>☀️</div>
+        <b>23°C / 14°C</b>
+      </div>
+    </div>
+  </section>
+</main>
+
+ <footer>
+
+ </footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
